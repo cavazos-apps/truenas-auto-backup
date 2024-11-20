@@ -30,6 +30,9 @@ backuploc=""
 # Max number of backups to keep (set as 0 to never delete anything)
 maxnrOfFiles=
 
+# The SSH URL for your GitHub repository
+gitUrl=
+
 
 # # # # # # # # # # # # # # # # # #
 # END USER CONFIGURABLE VARIABLES #
@@ -137,5 +140,5 @@ else
     git commit -m "Add TrueNAS backup file ($(date +'%m/%d/%Y'))"
 fi
 
-git remote add origin url  # Use the SSH URL for your GitHub repository
+git remote add origin ${gitUrl}
 git push -u origin main
