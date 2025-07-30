@@ -1,4 +1,4 @@
-# TrueNAS Auto Backup
+# TrueNAS Backup Script
 
 This repository provides an automated backup script for TrueNAS SCALE configuration files using Bash and Git. The script downloads the TrueNAS config via API, stores it (optionally with secret seed), manages backup retention, and can push the backup files to a GitHub repository for offsite storage.
 
@@ -23,8 +23,8 @@ This repository provides an automated backup script for TrueNAS SCALE configurat
 1. **Clone this repository or download the script**
 
    ```sh
-   git clone https://github.com/cavazos-apps/truenas-auto-backup.git
-   cd truenas-auto-backup
+   git clone https://github.com/cavazos-apps/truenas-backup-script.git
+   cd truenas-backup-script
    ```
 
 2. **Edit the script variables**
